@@ -1,0 +1,149 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  margin: none;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  margin-top: 15px;
+  padding: 1rem;
+  background: transparent;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+.app-main {
+  flex: 1;
+  padding: 2rem;
+}
+
+.search-box {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  background: #2a2a2a;
+  color: #f5f5f5;
+}
+
+.search-box button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #f5b453;
+  color: #121212;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.movie-card {
+  position: relative; /* referência pro botão */
+  background: #1e1e1e;
+  padding: 1rem 1rem 2.5rem; /* espaço pro botão não sobrepor texto */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.buttton-div {
+  position: absolute;
+  top: 0.5rem; /* canto superior direito */
+  right: 0.5rem;
+}
+
+.buttton-div button {
+  background: #2a2a2a;
+  border: none;
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  color: #f5f5f5;
+  transition: 0.3s ease;
+}
+
+.buttton-div button:hover {
+  color: #fa3d3d;
+  background-color: #222222;
+}
+.buttton-div button:active {
+  color: rgb(255, 0, 0);
+  background-color: #2b2b2b;
+}
+
+.movie-card:hover {
+  transform: translateY(-4px);
+  background: #2e2e2e;
+}
+
+.app-footer {
+  padding: 1rem;
+  text-align: center;
+  background: transparent;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+button.fav-movie {
+  color: #fa3d3d;
+  background: #242424;
+}
+
+.average {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#rating-select {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #2a2a2a; /* fundo escuro */
+  color: #f5f5f5; /* texto claro */
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.2s ease;
+}
+
+#rating-select:hover {
+  background: #3a3a3a; /* clareia no hover */
+}
+
+#rating-select:focus {
+  border: 1px solid #f5b453; /* destaque quando selecionado */
+}
