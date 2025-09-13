@@ -14,3 +14,6 @@ A small project built with **React + TypeScript** to practice modern **JavaScrip
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vite](https://vitejs.dev/)
 - CSS (basic dark theme)
+
+## Part 2
+- On the way
